@@ -1,24 +1,15 @@
-# README
+# ToDoIt ✔️
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ToDoIt is a single page ToDo application. It uses a dynamic, database-driven approach
+that doesn't use any page refreshes to update the page. Instead, it fetches data using
+RESTful JSON APIs from Rails and JavaScript to dynamically update the page.
 
-Things you may want to cover:
+Based on [ToDoMVC](http://todomvc.com)
 
-* Ruby version
+## Features:
 
-* System dependencies
+* Ruby version 2.4.1
 
-* Configuration
+* Rails version 5.1.1
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Implements a RESTful API
