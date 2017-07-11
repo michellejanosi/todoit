@@ -1,5 +1,5 @@
 $(function() {
-  
+
     function taskHtml(task) {
       var checkedStatus = task.done ? "checked" : "";
       var liElement = '<li><div class="view"><input class="toggle" type="checkbox"' +
@@ -51,6 +51,7 @@ $(function() {
         var ulTodos = $('.todo-list');
         ulTodos.append(htmlString);
         $('.toggle').click(toggleTask);
+        $('.new-todo').val('');
       });
     });
   });
