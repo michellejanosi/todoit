@@ -351,6 +351,12 @@ html .clear-completed:active {
   text-decoration: none;
 }
 
+.fa-trash-o {
+  float: right;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
 /*
   Hack to remove background from Mobile Safari.
   Can't use it globally since it destroys checkboxes in Firefox

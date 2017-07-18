@@ -8,7 +8,7 @@ $(function() {
       " data-id='" + task.id + "'" +
       checkedStatus +
       '><label>' +
-       task.title +
+       task.title + '<i class="fa fa-trash-o" data-id="' + task.id + '"></i>' +
        '</label></div></li>';
 
     return liElement;
@@ -42,7 +42,7 @@ $(function() {
     ulTodos.html(htmlString);
 
     $('.toggle').change(toggleTask);
-
+    $('.fa-trash-o').click(deleteTask);
   });
 
   $('#new-form').submit(function(event) {
@@ -61,4 +61,8 @@ $(function() {
       $('.new-todo').val('');
     });
   });
+
+  function deleteTask(e) {
+    alert($(e.target).data("id"));
+  }
 });
