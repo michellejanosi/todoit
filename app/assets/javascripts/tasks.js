@@ -63,6 +63,13 @@ $(function() {
   });
 
   function deleteTask(e) {
-    alert($(e.target).data("id"));
+    var itemId = $(e.target).data("id");
+
+    $.post("/tasks/" + itemId, {
+      _method: "DELETE"
+    }).success(function(data) {
+      var $li = $("#listItem-" + data.id);
+      $li.remove();
+    });
   }
 });
